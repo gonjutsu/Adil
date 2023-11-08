@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Shelter</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="icon" href="favicon.png" type="image/png">
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7e472c;"> 
+    <a class="navbar-brand" href="#">Animal Shelter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="adopt.html">Adopt</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Add this right after your navigation bar -->
+<div class="px-4 py-2 my-3 text-center">
+  <i class="fa-solid fa-paw"></i> <h1 class="display-5 fw-bold">Welcome to Our Online Animal Shelter</h1>
+  <a href="#about-us" class="btn btn-primary mt-3 about-us-button" role="button">About Us</a>
+
+</div>
+<div class="carousel-background">
+  <!-- Carousel -->
+  <div id="animalCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#animalCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#animalCarousel" data-slide-to="1"></li>
+      <li data-target="#animalCarousel" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="1.jpg" class="d-block w-100 custom-shadow" alt="Kitten">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="2.jpg" class="d-block w-100 custom-shadow" alt="Puppy">
+        <div class="carousel-caption d-none d-md-block">
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="3.jpg" class="d-block w-100 custom-shadow" alt="Rabbit">
+        <div class="carousel-caption d-none d-md-block"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div id="about-us" class="container mt-5">
+    <div class="row">
+      <!-- Image Column -->
+      <div class="col-md-6">
+        <img src="main.jpg" class="d-block w-100 custom-shadow" alt="About Us">
+      </div>
+      
+      <!-- Text Column -->
+      <div class="col-md-6">
+        <h2>About Us</h2>
+        <p>Welcome to Pet Haven Online — Your Gateway to Finding a New Furry Friend. At Pet Haven Online, we believe that every animal deserves a loving home and every home deserves a loyal companion.</p>
+        <h3>Our Mission</h3>
+        <p>Our mission is simple yet profound: to create lasting connections between pets and families through a transparent, supportive, and accessible online platform.</p>
+        <h3>Our Animals</h3>
+        <p>Our diverse array of adorable residents includes cats of all breeds, ages, and personalities, as well as a variety of other pets looking for their forever homes.</p>
+        <h3>Our Commitment to Care</h3>
+        <p>Before making the journey to their new family, our pets receive the highest standard of care, including vaccinations, spaying/neutering, and regular veterinary check-ups.</p>
+        <h3>Join Our Community</h3>
+        <p>When you choose to find your furry friend through Pet Haven Online, you're not just getting a pet; you're gaining access to a supportive community.</p>
+        <h3>Our Promise to You</h3>
+        <p>We are committed to ensuring that every adoption is a perfect match. Our user-friendly website and dedicated support team make it easy for you to find and fall in love with your ideal pet.</p>
+      </div>
+    </div>
+  </div>
+  
+
+  <script src="main.js"></script>
+</body>
+<br>
+<!-- Footer -->
+<footer class="text-center bg-light text-muted">
+
+  <!-- Footer Heading -->
+  <h2 class="pt-2 pb-1">Animal Shelter</h2>
+
+  <!-- Footer Content -->
+  <div class="container p-2">
+
+    <!-- Footer Text -->
+    <div class="row">
+      <div class="col-md-6 mx-auto mb-2">
+        <!-- Content -->
+        <p class="mb-0">At the heart of our community, the local animal shelter provides a beacon of hope for countless animals in need, offering not just a safe haven but also a second chance at life.</p>
+      </div>
+
+      <!-- Footer Contact Information -->
+      <div class="col-md-6 mx-auto mb-2">
+        
+        <p class="mb-0"><i class="fas fa-home me-2"></i> Astana</p>
+        <p class="mb-0"><i class="fas fa-envelope me-2"></i> balgabai.adil01@gmail.com</p>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer Bottom Text -->
+  <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
+    © 2023 Animal Shelter: All rights reserved
+  </div>
+
+</footer>
+
+
+
+
+</html>

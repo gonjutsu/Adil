@@ -1,0 +1,134 @@
+
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #eacfbf;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important; /* Brand color */
+}
+
+.nav-link {
+  color: #ffffff !important; /* Brand color for links */
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* Custom styles for carousel indicators */
+.carousel-indicators li {
+  background-color: #4f250b; /* Brand color */
+}
+
+.carousel-indicators .active {
+  background-color: #5f2b0b; /* Lighter shade for active indicator */
+}
+
+
+#animalCarousel img {
+  max-width: 130%; /* Adjust this value as per your requirement */
+  max-height: 900px; /* Adjust this value as per your requirement */
+  margin: auto; /* This will help center the image if it is smaller than the container */
+}
+
+#animalCarousel {
+  width: 50%; /* Adjust this value as per your requirement */
+  margin: auto; /* This will center the carousel on the page */
+}
+.custom-img-responsive {
+  width: 100%; /* This ensures the image is never larger than the container */
+  height: auto;
+  max-height: 500px; /* Adjust based on your preference */
+}
+.custom-shadow {
+  box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
+}
+.carousel-background {
+  background-color: rgba(255, 247, 236, 0.443);
+  padding: 2px; /* Adjust the padding as needed */
+}
+
+/* styles.css */
+.about-us-button {
+  background-color: rgba(255, 77, 0, 0.281); /* Bootstrap primary color */
+  border-color: rgba(255, 77, 0, 0.281);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: background-color 0.3s, border-color 0.3s, color 0.3s;
+}
+
+.about-us-button:hover,
+.about-us-button:focus {
+  background-color: rgb(179, 95, 0); /* Darker blue on hover/focus */
+  border-color: #b36b00;
+  color: #ffffff;
+  text-decoration: none; /* Removes underline text on hover/focus */
+}
+
+
+/* Custom styles for the contact page submit button */
+.btn-primary {
+  background-color: rgb(175, 137, 76); /* Green background color */
+  border-color: rgb(186, 138, 18); /* Green border color */
+}
+
+.btn-primary:hover {
+  background-color: rgb(160, 131, 69); /* Darker green on hover */
+  border-color: rgb(170, 132, 27); /* Darker green border on hover */
+}
+
+/* Optional: changing the focus and active states to match */
+.btn-primary:focus,
+.btn-primary:active {
+  background-color: #39843c;
+  border-color: #39843c;
+  box-shadow: none; /* This removes the Bootstrap default glow */
+}
+/* Define the keyframes for the fadeInUp animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 20px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Apply the animation to each card with a staggered delay */
+.card {
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  /* animation-delay will be defined inline for each card to stagger them */
+}
+
+/* Optional: You may add hover effects or other styles for the card here */
+.card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.thank-you-message {
+  color: rgb(128, 68, 0);
+  margin-top: 20px;
+  text-align: center;
+  /* Add additional styling as needed */
+}
+
+/* Responsive text for carousel */
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 12px;
+  }
+}
+
+/* Add more custom styles as needed */
+

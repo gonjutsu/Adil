@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Adopt a Pet - Animal Shelter</title>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="favicon.png" type="image/png">
+  <audio id="catSound" src="cat.mp3"></audio>
+  <audio id="secondSound" src="cat2.mp3"></audio>
+  <audio id="thirdSound" src="dog1.mp3"></audio>
+  <audio id="4Sound" src="dog2.mp3"></audio>
+</head>
+<body>
+
+  <!-- Navigation Bar -->
+
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #7e472c;"> 
+    <a class="navbar-brand" href="#">Animal Shelter</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="adopt.html">Adopt</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Adoption Section -->
+  <div class="container mt-5">
+    <h2 class="text-center mb-4">Adopt a Friend</h2>
+    <div class="row">
+
+      <div class="col-md-3 mb-4">
+        <div class="card" style="animation-delay: 0s;">
+          <img src="cat1.jpg" class="card-img-top" alt="Pet Name">
+          <div class="card-body">
+            <h5 class="card-title">Sophie</h5>
+            <p class="card-text">Sophie, a ginger cat with striking amber eyes. </p>
+            <a href="#" class="btn btn-primary" onclick="playSound('catSound'); return false;">Listen</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card" style="animation-delay: 0.2s;">
+          <img src="cat2.jpg" class="card-img-top" alt="Pet Name">
+          <div class="card-body">
+            <h5 class="card-title"> Milo</h5>
+            <p class="card-text">Milo, with his sleek grey and white coat and green eyes.</p>
+            <a href="#" class="btn btn-primary" onclick="playSound('secondSound'); return false;">Listen</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card" style="animation-delay: 0.4s;">
+          <img src="dog1.jpg" class="card-img-top" alt="Pet Name">
+          <div class="card-body">
+            <h5 class="card-title">Luna</h5>
+            <p class="card-text">Luna, a rich golden coat and soulful eyes.</p>
+            <a href="#" class="btn btn-primary" onclick="playSound('thirdSound'); return false;">Listen</a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-3 mb-4">
+        <div class="card" style="animation-delay: 0.6s;">
+          <img src="dog2.jpg" class="card-img-top" alt="Pet Name">
+          <div class="card-body">
+            <h5 class="card-title">Rocky</h5>
+            <p class="card-text">Rocky, with alert ears and a striking black and tan coat.</p>
+            <a href="#" class="btn btn-primary" onclick="playSound('4Sound'); return false;">Listen</a>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat for other pets... -->
+    </div>
+    <!-- End of Row -->
+  </div>
+  <!-- End of Container -->
+
+  <!-- Footer -->
+
+  <footer class="text-center bg-light text-muted">
+
+    <!-- Footer Heading -->
+    <h2 class="pt-2 pb-1">Animal Shelter</h2>
+  
+    <!-- Footer Content -->
+    <div class="container p-2">
+  
+      <!-- Footer Text -->
+      <div class="row">
+        <div class="col-md-6 mx-auto mb-2">
+          <!-- Content -->
+          <p class="mb-0">At the heart of our community, the local animal shelter provides a beacon of hope for countless animals in need, offering not just a safe haven but also a second chance at life..</p>
+        </div>
+  
+        <!-- Footer Contact Information -->
+        <div class="col-md-6 mx-auto mb-2">
+          
+          <p class="mb-0"><i class="fas fa-home me-2"></i> Astana</p>
+          <p class="mb-0"><i class="fas fa-envelope me-2"></i> balgabai.adil01@gmail.com</p>
+        </div>
+      </div>
+  
+    </div>
+  
+    <!-- Footer Bottom Text -->
+    <div class="text-center p-1" style="background-color: rgba(0, 0, 0, 0.05);">
+      © 2023 Animal Shelter: All rights reserved
+    </div>
+  
+  </footer>
+  <script src="main.js"></script>
+</body>
+</html>
